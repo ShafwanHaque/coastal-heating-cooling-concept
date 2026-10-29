@@ -561,3 +561,280 @@
 @media (prefers-reduced-motion: reduce) {
   .scope :global(.home-hero--open-door .home-hero__photo-main--natural) { transition: none; }
 }
+
+/* Coastal signature: let the supplied Gulf Coast photograph carry the hero. */
+.scope :global(.home-hero--open-door) {
+  --door-ink: #073f48;
+  --door-wall: #d9f1ef;
+  --door-mat: transparent;
+  background: #d9f1ef;
+}
+.scope :global(.home-hero--open-door .home-hero__inner) {
+  width: 100%;
+  max-width: none;
+  padding: var(--header-height) 0 0;
+}
+.scope :global(.home-hero--open-door .home-hero__topline) { display: none; }
+.scope :global(.home-hero--open-door .home-hero__composition) {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: clamp(490px, 43vw, 660px);
+  padding: 0;
+  overflow: hidden;
+  filter: none;
+  background: #75b7bc;
+}
+.scope :global(.home-hero--open-door .home-hero__media) {
+  position: absolute;
+  inset: 0;
+  display: block;
+  padding: 0;
+  background: transparent;
+}
+.scope :global(.home-hero--open-door .home-hero__photo-wrap) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.scope :global(.home-hero--open-door .home-hero__photo-main--natural) {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  object-position: center 44%;
+  border-radius: 0;
+  box-shadow: none;
+}
+.scope :global(.home-hero--open-door .home-hero__copy) {
+  position: absolute;
+  z-index: 3;
+  top: clamp(25px, 4vw, 60px);
+  left: 51%;
+  width: min(36%, 500px);
+  min-height: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: #073f48;
+  background: transparent;
+  clip-path: none;
+}
+.scope :global(.home-hero--open-door .home-hero__copy::before) { content: none; }
+.scope :global(.home-hero--open-door .home-hero__door-seam),
+.scope :global(.home-hero--open-door .home-hero__door-title) { display: none; }
+.scope :global(.home-hero--open-door .home-hero__title) {
+  color: #073f48;
+  font-size: clamp(40px, 4.4vw, 69px);
+  line-height: .98;
+  text-shadow: 0 1px 0 rgba(255,255,255,.18);
+}
+.scope :global(.home-hero--open-door .home-hero__title-accent) { color: #075b67; }
+.scope :global(.home-hero--open-door .home-hero__description) {
+  max-width: 410px;
+  color: rgba(7,63,72,.86);
+  font-size: clamp(14px, 1.05vw, 16px);
+}
+.scope :global(.home-hero--open-door .home-hero__primary) {
+  color: #fff;
+  background: #075b67;
+  box-shadow: 0 8px 22px rgba(3,65,75,.18);
+}
+.scope :global(.home-hero--open-door .home-hero__primary svg) { color: #8ee0dd; }
+.scope :global(.home-hero--open-door .home-hero__secondary) {
+  color: #073f48;
+  border-color: rgba(7,63,72,.48);
+}
+.scope :global(.home-hero--open-door .home-hero__location) { display: none; }
+.scope :global(.home-hero--open-door .home-hero__caption) { display: none; }
+.scope :global(.home-hero--open-door .home-hero__service-band) {
+  width: min(100%, 1280px);
+  margin: 0 auto;
+  padding: 15px var(--hero-edge) 18px;
+  border-color: rgba(7,63,72,.2);
+}
+.scope :global(.home-hero--open-door .home-hero__band-label) { color: rgba(7,63,72,.62); }
+.scope :global(.home-hero--open-door .home-hero__service-band nav a),
+.scope :global(.home-hero--open-door .home-hero__discover) { color: #073f48; }
+
+@media (max-width: 900px) {
+  .scope :global(.home-hero--open-door .home-hero__inner) { padding-top: var(--header-height); }
+  .scope :global(.home-hero--open-door .home-hero__composition) {
+    display: flex;
+    height: auto;
+    min-height: 0;
+    flex-direction: column;
+    overflow: visible;
+  }
+  .scope :global(.home-hero--open-door .home-hero__copy) {
+    position: relative;
+    inset: auto;
+    order: 0;
+    width: 100%;
+    padding: 28px var(--hero-edge) 23px;
+    background: #d9f1ef;
+  }
+  .scope :global(.home-hero--open-door .home-hero__media) {
+    position: relative;
+    inset: auto;
+    order: 1;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .scope :global(.home-hero--open-door .home-hero__photo-wrap) { height: auto; }
+  .scope :global(.home-hero--open-door .home-hero__photo-main--natural) {
+    width: 100%;
+    height: auto;
+    max-height: min(68vw, 560px);
+    object-fit: cover;
+    object-position: center 42%;
+  }
+  .scope :global(.home-hero--open-door .home-hero__service-band) { flex-wrap: wrap; }
+}
+@media (max-width: 540px) {
+  .scope :global(.home-hero--open-door .home-hero__copy) { padding: 23px var(--hero-edge) 19px; }
+  .scope :global(.home-hero--open-door .home-hero__title) { font-size: clamp(39px, 10vw, 52px); }
+  .scope :global(.home-hero--open-door .home-hero__description) { margin-top: 13px; }
+  .scope :global(.home-hero--open-door .home-hero__actions) { margin-top: 15px; }
+  .scope :global(.home-hero--open-door .home-hero__photo-main--natural) { max-height: 72vw; }
+  .scope :global(.home-hero--open-door .home-hero__service-band nav) { flex-wrap: wrap; }
+}
+
+/* Coastal editorial direction: an image-led frame with a surfboard-soft comfort card. */
+.scope :global(.home-hero--open-door .home-hero__composition) {
+  height: clamp(500px, 42vw, 625px);
+  background: #5eaeb2;
+}
+.scope :global(.home-hero--open-door .home-hero__photo-main--natural) {
+  object-position: center 47%;
+}
+.scope :global(.home-hero--open-door .home-hero__copy) {
+  top: auto;
+  bottom: clamp(22px, 3.2vw, 46px);
+  left: clamp(22px, 5vw, 76px);
+  width: min(430px, 38%);
+  padding: clamp(24px, 2.8vw, 36px) clamp(24px, 3vw, 39px);
+  border: 1px solid rgba(164, 236, 231, .52);
+  border-radius: 27px 27px 78px 27px;
+  background: rgba(5, 57, 65, .94);
+  box-shadow: 0 22px 54px rgba(3, 40, 45, .24), inset 0 1px 0 rgba(255,255,255,.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #f6ffff;
+}
+.scope :global(.home-hero--open-door .home-hero__copy::before) {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(135, 229, 224, .35);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.scope :global(.home-hero--open-door .home-hero__copy::after) {
+  content: "";
+  position: absolute;
+  top: 31px;
+  right: 35px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ff8a54;
+  box-shadow: 0 0 0 5px rgba(255,138,84,.12);
+  pointer-events: none;
+}
+.scope :global(.home-hero--open-door .home-hero__door-title) {
+  display: block;
+  margin: 0 58px 17px 0;
+  color: #8ee0dd;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .17em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.scope :global(.home-hero--open-door .home-hero__title) {
+  color: #f6ffff;
+  font-size: clamp(40px, 4vw, 59px);
+  line-height: .96;
+  letter-spacing: -.072em;
+  text-shadow: none;
+}
+.scope :global(.home-hero--open-door .home-hero__title-accent) {
+  color: #8ee0dd;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -.055em;
+}
+.scope :global(.home-hero--open-door .home-hero__description) {
+  margin-top: 15px;
+  max-width: 335px;
+  color: rgba(242, 253, 252, .78);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.scope :global(.home-hero--open-door .home-hero__actions) {
+  gap: 12px 18px;
+  margin-top: 19px;
+}
+.scope :global(.home-hero--open-door .home-hero__primary) {
+  min-height: 44px;
+  padding-inline: 16px;
+  border-radius: 999px;
+  color: #073f48;
+  background: #8ee0dd;
+  box-shadow: none;
+}
+.scope :global(.home-hero--open-door .home-hero__primary svg) { color: #073f48; }
+.scope :global(.home-hero--open-door .home-hero__secondary) {
+  min-height: 44px;
+  color: #f6ffff;
+  border-color: rgba(246,255,255,.38);
+}
+.scope :global(.home-hero--open-door .home-hero__service-band) {
+  border: 0;
+  width: min(100%, 1280px);
+  min-height: 64px;
+  padding-block: 12px 19px;
+}
+.scope :global(.home-hero--open-door .home-hero__service-band nav a) {
+  font-size: 13px;
+  font-weight: 700;
+}
+.scope :global(.home-hero--open-door .home-hero__service-band nav a small) { color: #e9784c; }
+
+@media (max-width: 900px) {
+  .scope :global(.home-hero--open-door .home-hero__composition) { height: auto; }
+  .scope :global(.home-hero--open-door .home-hero__copy) {
+    top: auto;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .scope :global(.home-hero--open-door .home-hero__copy::before),
+  .scope :global(.home-hero--open-door .home-hero__copy::after) { display: none; }
+  .scope :global(.home-hero--open-door .home-hero__door-title) { margin: 0 0 12px; }
+  .scope :global(.home-hero--open-door .home-hero__title) { color: #073f48; }
+  .scope :global(.home-hero--open-door .home-hero__title-accent) { color: #075b67; }
+  .scope :global(.home-hero--open-door .home-hero__description) { color: rgba(7,63,72,.82); }
+  .scope :global(.home-hero--open-door .home-hero__secondary) {
+    color: #073f48;
+    border-color: rgba(7,63,72,.48);
+  }
+}
+@media (max-width: 540px) {
+  .scope :global(.home-hero--open-door .home-hero__primary) { min-height: 42px; }
+  .scope :global(.home-hero--open-door .home-hero__secondary) { min-height: 42px; }
+}

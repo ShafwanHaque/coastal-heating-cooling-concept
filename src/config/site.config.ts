@@ -205,231 +205,324 @@ export type ServiceConfig = {
 };
 
 export const siteConfig: SiteConfig = {
-  brand: {
-    name: "Wynn Creek AC",
-    shortName: "Wynn Creek",
-    logo: "/brand/wynn-creek-ac-logo.png",
-    logoLight: "/brand/wynn-creek-ac-logo.png",
-    region: "Gulf Shores to Mobile along the Alabama Gulf Coast",
+  "brand": {
+    "name": "Coastal Heating & Cooling",
+    "shortName": "Coastal",
+    "logo": "/brand/coastal-official-logo.png",
+    "logoLight": "/brand/coastal-official-logo.png",
+    "region": "Baldwin County · Alabama Gulf Coast"
   },
-
-  theme: {
-    style: "technical",
-    colors: {
-      brandPrimary: "#B88938",
-      brandSecondary: "#E1C474",
-      brandAccent: "#D3A64E",
-      page: "#100F0C",
-      surfaceDark: "#100F0C",
-      surfaceDarkAlt: "#1B1914",
-      surfaceElevated: "#2A251A",
-      surfaceSoft: "#F2EBDD",
-      textPrimary: "#FBF7EE",
-      textSecondary: "#E8E0CF",
-      textMuted: "#B8AD98",
-      textOnBrand: "#FFFFFF",
-      borderSubtle: "#3A3428",
-      borderStrong: "#695C40",
-      glowPrimary: "#B88938",
-      glowSecondary: "#E1C474",
-      networkLine: "#BE984A",
-      success: "#73B78A",
-      service1: "#B88938",
-      service2: "#D5B45D",
-      service3: "#7D8570",
-      service4: "#9B7755",
-      service5: "#C8A969",
-    },
+  "theme": {
+    "style": "clean",
+    "colors": {
+      "brandPrimary": "#096C78",
+      "brandSecondary": "#69C8C8",
+      "brandAccent": "#E7AA59",
+      "page": "#09252C",
+      "surfaceDark": "#09252C",
+      "surfaceDarkAlt": "#0E363D",
+      "surfaceElevated": "#18515B",
+      "surfaceSoft": "#EAF5F5",
+      "textPrimary": "#FCFDFD",
+      "textSecondary": "#DBE9E9",
+      "textMuted": "#91A9A9",
+      "textOnBrand": "#FFFFFF",
+      "borderSubtle": "#2E4D51",
+      "borderStrong": "#55767A",
+      "glowPrimary": "#096C78",
+      "glowSecondary": "#69C8C8",
+      "networkLine": "#E7AA59",
+      "success": "#70A982",
+      "service1": "#096C78",
+      "service2": "#E7AA59",
+      "service3": "#69C8C8",
+      "service4": "#789A9A",
+      "service5": "#C59A65"
+    }
   },
-
-  header: {
-    navServices: "Services",
-    navAreas: "Service areas",
-    navContact: "Contact",
-    helpLabel: "Call (251) 359-6401",
-    ctaLabel: "Request service",
-    mobileEyebrow: "ALABAMA GULF COAST · GULF SHORES TO MOBILE",
-    mobileCallLabel: "Call now",
+  "header": {
+    "navServices": "Services",
+    "navAreas": "Service areas",
+    "navContact": "Contact",
+    "helpLabel": "Call 251-501-HVAC (4822)",
+    "ctaLabel": "Request service",
+    "mobileEyebrow": "BALDWIN COUNTY · ALABAMA GULF COAST",
+    "mobileCallLabel": "Call now"
   },
-
-  opening: {
-    enabled: true,
-    durationMs: 2600,
-    eyebrow: "WYNN CREEK AC · GULF SHORES",
-    line1: "Local care.",
-    line2: "Lasting comfort.",
-    detail: "Wynn Creek AC · Gulf Shores to Mobile, Alabama",
-    location: "Gulf Shores to Mobile · Alabama Gulf Coast",
-    skipLabel: "Skip intro",
+  "opening": {
+    "enabled": true,
+    "durationMs": 2300,
+    "eyebrow": "COASTAL HEATING & COOLING · FOLEY",
+    "line1": "Coastal care.",
+    "line2": "Lasting comfort.",
+    "detail": "Coastal Heating & Cooling · Baldwin County, Alabama",
+    "location": "NATE-CERTIFIED · 24/7 SERVICE",
+    "skipLabel": "Skip intro"
   },
-
-  // One hero system for every outreach project. Replace these tokens per brand;
-  // do not put business-specific text or a brand palette inside custom-hero.tsx.
-  hero: {
-    layout: "service-craft",
-    eyebrow: "FAMILY-OWNED HVAC · ALABAMA GULF COAST",
-    headlineLine1: "Comfort built",
-    headlineLine2: "for the coast.",
-    description: "Family-owned heating and cooling service for Gulf Shores and nearby Alabama Gulf Coast communities, from repairs and maintenance to system replacement, ductwork and indoor air quality.",
-    primaryCta: "Request service",
-    secondaryCta: "Call Wynn Creek",
-    locationLabel: "GULF SHORES · ALABAMA GULF COAST",
-    locationValue: "GULF SHORES · ORANGE BEACH · FOLEY · MOBILE",
-    edgeLabel: "HEATING · COOLING · HOME COMFORT",
-    bottomStatement: "Thoughtful service for the comfort of home.",
-    sillLabel: "SERVING 14 ALABAMA GULF COAST COMMUNITIES",
-    serviceLabels: ["Cooling", "Heating", "Installation"],
-    discoverLabel: "Explore services",
-    motion: {
-      enabled: true,
-      pace: "balanced",
-      ambient: true,
-    },
-    system: {
-      eyebrow: "CLIMATE SYSTEM / IN MOTION",
-      modes: [
-        { id: "cool", label: "Cooling", detail: "A considered path from warm intake to balanced, conditioned air." },
-        { id: "warm", label: "Heating", detail: "Steady circulation, carefully controlled for colder days." },
-        { id: "pure", label: "Air quality", detail: "A focus on filtration and the air moving through every room." },
-      ],
-    },
-    media: {
-      primarySrc: "/hero/hvac-service-craft.webp",
-      primaryAlt: "Representative HVAC technician servicing an outdoor air-conditioning system beside a home.",
-      primaryPosition: "center center",
-      fit: "contain",
-      backdrop: "matte",
-    },
-  },
-
-  seo: {
-    title: "Wynn Creek AC | Heating, Cooling & Home Services",
-    description:
-      "Wynn Creek AC is a family-owned HVAC company serving Gulf Shores, Orange Beach, Fort Morgan, Foley, Fairhope, Daphne, Spanish Fort, Loxley, Robertsdale, Silverhill, Elberta, Stapleton, Bon Secour and Mobile, Alabama.",
-  },
-
-  contact: {
-    phoneDisplay: "(251) 359-6401",
-    phoneHref: "tel:+12513596401",
-    email: "",
-    address: "Gulf Shores, Alabama",
-    contactUrl: "#contact",
-    servicesUrl: "#services",
-  },
-
-  brandStandard: {
-    eyebrow: "LOCAL KNOW-HOW · PERSONAL SERVICE",
-    titleLine1: "Coastal comfort,",
-    titleLine2: "handled with care.",
-    bodyTitle: "Comfort starts with a team that listens.",
-    body: "A family-owned team providing reliable HVAC installation, replacement, maintenance and repair across the Gulf Coast.",
-    callLabel: "Call now",
-    availabilityLabel: "Locally owned · Alabama Gulf Coast",
-    panelEyebrow: "WYNN CREEK SERVICE STANDARD",
-    panelTitle: "Clear recommendations and dependable care for homes and businesses.",
-    panelFooter: "Gulf Shores to Mobile · Alabama Gulf Coast",
-    handoff: "Explore the services available from Wynn Creek.",
-    items: [
-      {
-        icon: "cooling",
-        label: "Coastal experience",
-        detail: "Service for Gulf Shores and surrounding Gulf Coast communities.",
-      },
-      {
-        icon: "heating",
-        label: "Complete HVAC care",
-        detail: "Repairs, new systems, ductwork and indoor air quality.",
-      },
-      {
-        icon: "maintenance",
-        label: "Family-owned service",
-        detail: "Honest recommendations and quality workmanship.",
-      },
+  "hero": {
+    "layout": "open-door",
+    "eyebrow": "A COOLER KIND OF COMFORT · BALDWIN COUNTY",
+    "headlineLine1": "Comfort, in its",
+    "headlineLine2": "element.",
+    "description": "Heating, cooling and 24/7 emergency service for homes across Baldwin County.",
+    "primaryCta": "Schedule service",
+    "secondaryCta": "Call Coastal",
+    "locationLabel": "FOLEY · BALDWIN COUNTY",
+    "locationValue": "GULF SHORES · ORANGE BEACH · FAIRHOPE",
+    "edgeLabel": "REPAIR · INSTALLATION · MAINTENANCE",
+    "bottomStatement": "Comfort that feels right at home.",
+    "sillLabel": "BALDWIN COUNTY · GULF COAST",
+    "serviceLabels": [
+      "Cooling",
+      "Heating",
+      "Air quality"
     ],
+    "discoverLabel": "Explore services",
+    "motion": {
+      "enabled": true,
+      "pace": "balanced",
+      "ambient": true
+    },
+    "system": {
+      "eyebrow": "LOCAL COMFORT / IN MOTION",
+      "modes": [
+        {
+          "id": "cool",
+          "label": "Cooling",
+          "detail": "A considered path from warm intake to balanced, conditioned air."
+        },
+        {
+          "id": "warm",
+          "label": "Heating",
+          "detail": "Steady circulation, carefully controlled for colder days."
+        },
+        {
+          "id": "pure",
+          "label": "Air quality",
+          "detail": "A focus on filtration and the air moving through every room."
+        }
+      ]
+    },
+    "media": {
+      "primarySrc": "/hero/coastal-thermostat-family.png",
+      "primaryAlt": "A woman adjusts her home thermostat in a bright, comfortable room.",
+      "primaryPosition": "center center",
+      "fit": "contain",
+      "backdrop": "matte"
+    }
   },
-
-  services: {
-    eyebrow: "HEATING · COOLING · MORE",
-    introLine1: "The help you need,",
-    introLine2: "in every season.",
-    summaryEyebrow: "GULF SHORES SERVICE DESK",
-    summaryTitle: "One local team. Year-round comfort.",
-    summaryBody:
-      "Wynn Creek AC provides air conditioning, heating, installation, ductwork and indoor air quality services along the Alabama Gulf Coast.",
-    summaryCta: "Talk to our team",
-    items: [
+  "seo": {
+    "title": "Coastal Heating & Cooling | Heating, Cooling & HVAC Services",
+    "description": "Coastal Heating & Cooling provides HVAC repair, installation, maintenance, duct services and indoor air quality solutions throughout Baldwin County, Alabama."
+  },
+  "contact": {
+    "phoneDisplay": "251-501-HVAC (4822)",
+    "phoneHref": "tel:+12515014822",
+    "email": "Nick@CoastalCoolingPro.com",
+    "address": "626 E. Orange Avenue, Foley, AL 36535",
+    "contactUrl": "#contact",
+    "servicesUrl": "#services"
+  },
+  "brandStandard": {
+    "eyebrow": "LOCAL KNOW-HOW · PERSONAL SERVICE",
+    "titleLine1": "Keeping the Gulf Coast cool.",
+    "titleLine2": "Coastal comfort, handled with care.",
+    "bodyTitle": "Comfort starts with a team that listens.",
+    "body": "Locally owned and operated, Coastal Heating & Cooling brings NATE-certified expertise to Gulf Coast homes and businesses, with no extra night or weekend service charge.",
+    "callLabel": "Call now",
+    "availabilityLabel": "Baldwin County · Alabama Gulf Coast",
+    "panelEyebrow": "COASTAL SERVICE STANDARD",
+    "panelTitle": "Coastal Heating & Cooling provides Baldwin County HVAC repair, replacement, installation and maintenance with a NATE-certified team.",
+    "panelFooter": "Baldwin County · Alabama Gulf Coast",
+    "handoff": "Explore services from Coastal.",
+    "items": [
       {
-        name: "Air Conditioning",
-        shortName: "Cooling",
-        image: "/services/01.svg",
+        "icon": "cooling",
+        "label": "Cooling and repair",
+        "detail": "Reliable cooling service for homes and businesses."
       },
       {
-        name: "Heating & Heat Pumps",
-        shortName: "Heating",
-        image: "/services/02.svg",
+        "icon": "heating",
+        "label": "Complete HVAC care",
+        "detail": "Installation, maintenance and repair through every season."
       },
       {
-        name: "HVAC Installation & Replacement",
-        shortName: "Installation",
-        image: "/services/03.svg",
+        "icon": "maintenance",
+        "label": "Local service",
+        "detail": "Keeping the Gulf Coast cool."
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "HEATING · COOLING · MORE",
+    "introLine1": "Comfort built",
+    "introLine2": "for the coast.",
+    "summaryEyebrow": "COASTAL SERVICE DESK",
+    "summaryTitle": "One local team. Year-round comfort.",
+    "summaryBody": "AC repair, heating, duct services and air filtration for the salty, humid Gulf Coast climate.",
+    "summaryCta": "Talk to our team",
+    "items": [
+      {
+        "name": "AC Repair & Replacement",
+        "shortName": "Cooling",
+        "image": "/services/01.svg"
       },
       {
-        name: "Ductwork & Airflow",
-        shortName: "Ductwork",
-        image: "/services/04.svg",
+        "name": "AC Installation",
+        "shortName": "Heating",
+        "image": "/services/02.svg"
       },
       {
-        name: "Indoor Air Quality",
-        shortName: "Air quality",
-        image: "/services/05.svg",
+        "name": "Heating & Heat Pumps",
+        "shortName": "Installation",
+        "image": "/services/03.svg"
       },
+      {
+        "name": "Duct Services & Air Balancing",
+        "shortName": "Maintenance",
+        "image": "/services/04.svg"
+      },
+      {
+        "name": "Air Filtration & Indoor Air Quality",
+        "shortName": "Air quality",
+        "image": "/services/05.svg"
+      }
+    ]
+  },
+  "coverage": {
+    "eyebrow": "NEARBY SERVICE AREA",
+    "titleLine1": "Keeping the Gulf Coast",
+    "titleLine2": "comfortable.",
+    "description": "Gulf Shores, Orange Beach, Foley, Elberta, Lillian, Magnolia Springs, Fairhope, Daphne, Spanish Fort, Summerdale, Silverhill, Robertsdale, Loxley and Bay Minette.",
+    "featuredLocation": "Gulf Shores, AL",
+    "locationDetail": "Proud to serve Baldwin County · Alabama Gulf Coast.",
+    "ctaLabel": "Request service",
+    "networkLabel": "THE LOCAL SERVICE NETWORK",
+    "regionLabel": "Baldwin County · Alabama Gulf Coast",
+    "metrics": [
+      {
+        "value": "14 communities",
+        "label": "Local coverage"
+      },
+      {
+        "value": "NATE-certified team",
+        "label": "Service area"
+      },
+      {
+        "value": "24/7 emergency service",
+        "label": "Local team"
+      }
     ],
+    "locations": [
+      {
+        "name": "Gulf Shores, AL",
+        "kind": "city",
+        "lat": 30.246,
+        "lng": -87.7008,
+        "hub": false
+      },
+      {
+        "name": "Orange Beach, AL",
+        "kind": "city",
+        "lat": 30.2944,
+        "lng": -87.5736,
+        "hub": false
+      },
+      {
+        "name": "Foley, AL",
+        "kind": "city",
+        "lat": 30.4066,
+        "lng": -87.6836,
+        "hub": true
+      },
+      {
+        "name": "Elberta, AL",
+        "kind": "city",
+        "lat": 30.4144,
+        "lng": -87.5978,
+        "hub": false
+      },
+      {
+        "name": "Lillian, AL",
+        "kind": "city",
+        "lat": 30.4191,
+        "lng": -87.4478,
+        "hub": false
+      },
+      {
+        "name": "Magnolia Springs, AL",
+        "kind": "city",
+        "lat": 30.3905,
+        "lng": -87.7769,
+        "hub": false
+      },
+      {
+        "name": "Fairhope, AL",
+        "kind": "city",
+        "lat": 30.5227,
+        "lng": -87.9033,
+        "hub": false
+      },
+      {
+        "name": "Daphne, AL",
+        "kind": "city",
+        "lat": 30.6035,
+        "lng": -87.9036,
+        "hub": false
+      },
+      {
+        "name": "Spanish Fort, AL",
+        "kind": "city",
+        "lat": 30.6749,
+        "lng": -87.9153,
+        "hub": false
+      },
+      {
+        "name": "Summerdale, AL",
+        "kind": "city",
+        "lat": 30.4863,
+        "lng": -87.6994,
+        "hub": false
+      },
+      {
+        "name": "Silverhill, AL",
+        "kind": "city",
+        "lat": 30.5469,
+        "lng": -87.7503,
+        "hub": false
+      },
+      {
+        "name": "Robertsdale, AL",
+        "kind": "city",
+        "lat": 30.5538,
+        "lng": -87.7111,
+        "hub": false
+      },
+      {
+        "name": "Loxley, AL",
+        "kind": "city",
+        "lat": 30.6188,
+        "lng": -87.7536,
+        "hub": false
+      },
+      {
+        "name": "Bay Minette, AL",
+        "kind": "city",
+        "lat": 30.8829,
+        "lng": -87.773,
+        "hub": false
+      }
+    ]
   },
-
-  coverage: {
-    eyebrow: "NEARBY SERVICE AREA",
-    titleLine1: "Rooted in Gulf Shores.",
-    titleLine2: "Here for the coast.",
-    description:
-      "Proudly serving Gulf Shores, Orange Beach, Fort Morgan, Foley, Fairhope, Daphne, Spanish Fort, Loxley, Robertsdale, Silverhill, Elberta, Stapleton, Bon Secour and Mobile, Alabama.",
-    featuredLocation: "Gulf Shores, AL",
-    locationDetail: "Proud to serve Gulf Shores and nearby communities along the Alabama Gulf Coast.",
-    ctaLabel: "Request service",
-    networkLabel: "THE LOCAL SERVICE NETWORK",
-    regionLabel: "Alabama Gulf Coast · Gulf Shores to Mobile",
-    metrics: [
-      { value: "14 communities", label: "Local coverage" },
-      { value: "Gulf Shores to Mobile", label: "Alabama Gulf Coast" },
-      { value: "Family owned", label: "A local team" },
-    ],
-
-    locations: [
-      { name: 'Gulf Shores, AL', kind: "city", lat: 30.246, lng: -87.7008, hub: true },
-      { name: 'Orange Beach, AL', kind: "city", lat: 30.2944, lng: -87.5736 },
-      { name: 'Fort Morgan, AL', kind: "community", lat: 30.2297, lng: -88.0225 },
-      { name: 'Foley, AL', kind: "city", lat: 30.4066, lng: -87.6836 },
-      { name: 'Fairhope, AL', kind: "city", lat: 30.5227, lng: -87.9033 },
-      { name: 'Daphne, AL', kind: "city", lat: 30.6035, lng: -87.9036 },
-      { name: 'Spanish Fort, AL', kind: "city", lat: 30.6749, lng: -87.9153 },
-      { name: 'Loxley, AL', kind: "city", lat: 30.6188, lng: -87.7536 },
-      { name: 'Robertsdale, AL', kind: "city", lat: 30.5538, lng: -87.7111 },
-      { name: 'Silverhill, AL', kind: "city", lat: 30.5469, lng: -87.7503 },
-      { name: 'Elberta, AL', kind: "city", lat: 30.4144, lng: -87.5978 },
-      { name: 'Stapleton, AL', kind: "community", lat: 30.8918, lng: -87.8003 },
-      { name: 'Bon Secour, AL', kind: "community", lat: 30.3061, lng: -87.7344 },
-      { name: 'Mobile, AL', kind: "city", lat: 30.6954, lng: -88.0399 }
-    ],
-  },
-
-  contactSection: {
-    eyebrow: "YOUR LOCAL COMFORT TEAM",
-    titleLine1: "A local team.",
-    titleLine2: "A cooler coast.",
-    body: "Request a free estimate and tell Wynn Creek AC what your home or business needs. Call the team directly for service.",
-    primaryCta: "Request service",
-    secondaryCta: "Call Wynn Creek",
-    submissionMode: "demo",
-    formEndpoint: "",
-    successMessage: "Thanks for reaching out. This preview form is not connected yet; please call (251) 359-6401 to reach Wynn Creek.",
-  },
+  "contactSection": {
+    "eyebrow": "YOUR LOCAL COMFORT TEAM",
+    "titleLine1": "A local team.",
+    "titleLine2": "Ready to help.",
+    "body": "Tell Coastal what your home or business needs, or call the team directly to get started.",
+    "primaryCta": "Request service",
+    "secondaryCta": "Call Coastal",
+    "submissionMode": "demo",
+    "formEndpoint": "",
+    "successMessage": "Thanks for reaching out. This preview form is not connected yet; please call 251-501-HVAC (4822) to reach Coastal."
+  }
 };

@@ -10,11 +10,11 @@
 
 .scope :global(.brand__logo){
   display: block;
-  width: clamp(112px, 11vw, 146px);
-  max-height: 82px;
+  width: clamp(150px, 14vw, 178px);
+  max-height: none;
   height: auto;
-  border-radius: 7px;
-  box-shadow: 0 12px 32px rgba(9, 8, 6, 0.16);
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .scope :global(.site-header){

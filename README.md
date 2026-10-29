@@ -1,6 +1,6 @@
-# Wynn Creek AC Concept — HVAC Website
+# Coastal Heating & Cooling Concept — HVAC Website
 
-A standalone Next.js concept project based on the supplied HVAC template and personalized for Wynn Creek AC. It includes the complete `src` application, styling, local image assets, and pnpm lockfile.
+A standalone Next.js concept project based on the supplied HVAC template and tailored to Coastal Heating & Cooling. It includes the complete `src` app and pnpm lockfile.
 
 ## Run locally
 
@@ -9,14 +9,14 @@ pnpm install
 pnpm dev
 ```
 
-Then open [http://localhost:3000](http://localhost:3000). Use `pnpm build` to create a production build and `pnpm start` to run it.
+Then open [http://localhost:3000](http://localhost:3000). Use `pnpm build` for a production build.
 
 ## Project notes
 
-- Business details, theme, services, service area, and contact information are in `src/config/site.config.ts`.
-- Wynn Creek’s supplied logo is used in the header and intro; brand assets and photos are local in `public/`.
-- The request form is in preview mode and does not send submissions. Connect a secure form endpoint before using it to accept leads.
-- The service-area map loads OpenStreetMap tiles and needs internet access.
-- Business details were adapted from the public site; confirm them with the business before publishing.
+- Company details, theme, services, service area and contact information are in `src/config/site.config.ts`.
+- The supplied Coastal Heating & Cooling logo and thermostat hero photo are bundled locally in `public/brand` and `public/hero`.
+- The request form is a preview and does not send submissions.
+- The service-area map uses OpenStreetMap tiles and needs internet access.
+- Confirm all business details before publishing.
 
-Source: https://www.wynncreekac.com/
+Source: https://coastalcoolingpro.com/

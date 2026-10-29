@@ -1,5 +1,5 @@
 {
-  "name": "wynn-creek-ac-concept",
+  "name": "coastal-heating-cooling-concept",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -30,5 +30,5 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-  "description": "Brand-focused HVAC website for Wynn Creek AC."
+  "description": "Brand-focused HVAC website concept for Coastal Heating & Cooling."
 }

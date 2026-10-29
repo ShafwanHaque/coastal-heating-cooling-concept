@@ -18,11 +18,11 @@ export function BrandLogo({
         className="brand__logo"
         src={variant === "light" ? siteConfig.brand.logoLight : siteConfig.brand.logo}
         alt={siteConfig.brand.name}
-        width={190}
-        height={100}
+        width={368}
+        height={115}
         priority={priority}
         unoptimized
-        sizes="(max-width: 767px) 142px, 180px"
+        sizes="(max-width: 767px) 150px, 178px"
       />
     </span>
   );
